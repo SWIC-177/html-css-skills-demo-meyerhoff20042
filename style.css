@@ -12,7 +12,8 @@ body
 
 h2
 {
-    color: blue;
+    color: black;
+    text-decoration: underline;
 }
 
 h3
@@ -33,4 +34,17 @@ h3
     border-color: black;
     background-color: gray;
     color: white;
+    height: 400px;
+}
+
+.sec1
+{
+    float: left;
+    width: 50%;
+}
+
+.sec2
+{
+    float: right;
+    width: 50%;
 }
