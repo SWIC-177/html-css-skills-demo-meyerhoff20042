@@ -1,7 +1,36 @@
-h1 {
-    color: darkcyan;
+html 
+{
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-#SWIC {
-    width: fit-content;
+body
+{
+    border-style: solid;
+}
+
+h2
+{
+    color: blue;
+}
+
+h3
+{
+    font-style: italic;
+}
+
+.header
+{
+    border-style: solid;
+    color: silver;
+    background-color: blue;
+}
+
+.sec
+{
+    border-style: solid;
+    border-color: black;
+    background-color: gray;
+    color: white;
 }
