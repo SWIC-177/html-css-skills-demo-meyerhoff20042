@@ -3,11 +3,13 @@ html
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
+    background-color: navy;
 }
 
 body
 {
     border-style: solid;
+    background-color: white;
 }
 
 h2
@@ -18,33 +20,55 @@ h2
 
 h3
 {
+    color: cyan;
     font-style: italic;
+}
+
+.footer
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 150px;
+    color: navy;
 }
 
 .header
 {
     border-style: solid;
-    color: silver;
-    background-color: blue;
+    color: blue;
+    background-color: darkcyan;
+    padding-bottom: 10px;
 }
 
-.sec
+.sec1
+{
+    border-style: solid;
+    align-items: center;
+    background-color: white;
+    color: blue;
+    height: 400px;
+    float: left;
+    width: 38.93%;
+    object-fit: fill;
+}
+
+
+.sec2
 {
     border-style: solid;
     border-color: black;
     background-color: gray;
     color: white;
     height: 400px;
-}
-
-.sec1
-{
-    float: left;
-    width: 50%;
-}
-
-.sec2
-{
     float: right;
-    width: 50%;
+    width: 60%;
+}
+
+.sec3
+{
+    border-style: solid;
+    border-color: blue;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
