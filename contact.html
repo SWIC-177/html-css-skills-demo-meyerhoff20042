@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <h1><center>Contact Me</center></h1>
+            <a href="index.html">Return to Main Page</a>
+        </div>
+    </body>
+
+    <main>    
+        <form method="get"><div class="sec3">
+            Name:<br>
+            <input type="text" name="Name"><br><br>
+            Email:<br>
+            <input type="text" name="Email">
+            </div>
+
+            <div class="sec3"><fieldset>
+                <legend>Select your favorite class subject:</legend>
+                <input type="radio" name="subject" id="Programming" value="yes">
+                Programming<br>
+                <input type="radio" name="subject" id="History" value="yes">
+                History<br>
+                <input type="radio" name="subject" id="Math" value="yes">
+                Math<br>
+                <input type="radio" name="subject" id="English" value="yes">
+                English<br>
+                <input type="radio" name="subject" id="P.E." value="yes">
+                P.E.<br>
+                <input type="radio" name="subject" id="Other" value="yes">
+                Other<br>
+            </fieldset></div>
+
+            <div class="sec3"><fieldset>
+                <legend>Are you interested in any of these hobbies?</legend>
+                <input type="checkbox" name="hobby" id="Coding" value="yes">
+                Coding<br>
+                <input type="checkbox" name="hobby" id="Watching Sports" value="yes">
+                Watching Sports<br>
+                <input type="checkbox" name="hobby" id="Video Games" value="yes">
+                Video Games<br>
+                <input type="checkbox" name="hobby" id="Exercise" value="yes">
+                Exercise<br>
+            </fieldset></div>
+
+            <div class="sec3">
+            Where is your favorite place to be with friends?<br>
+            <select size="3" name="location" id="location">
+                <option value="Someone's house">Someone's house</option>
+                <option value="Shopping mall">Shopping mall</option>
+                <option value="Library">Library</option>
+                <option value="Gym">Gym</option>
+                <option value="Outdoors">Outdoors</option>
+                <option value="Other">Other</option>
+            </select></div>
+
+            <div class="sec3">
+            How is your day going?<br>
+            <textarea name="day" id="day" cols="40" rows="4"></textarea></div>
+
+            <div class="sec3">
+            <input type="submit">
+            <input type="reset"></div>
+        </form>
+    </main>
+</html>
