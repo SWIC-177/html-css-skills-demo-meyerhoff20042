@@ -1,79 +1,96 @@
-<!DOCTYPE html>
-<html lang="en" class="pl-[20%] pr-[20%] bg-blue-900">
-    <head>
-        <title>Contact Me</title>
-        <meta charset="utf-8">
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <link href="./style.css" rel="stylesheet">
-        <script src="main.js" type="module"></script>
-    </head>
-    <body class="bg-white">
-        <div class="text-red-500 bg-cyan-500 text-3xl text-center">
-            <h1>Contact Me</h1>
+<!doctype html>
+<html lang="en" class="bg-blue-900 pl-[20%] pr-[20%]">
+  <head>
+    <title>Contact Me</title>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="main.js" type="module"></script>
+  </head>
+  <body class="bg-white">
+    <div class="bg-cyan-500 text-center text-3xl text-red-500">
+      <h1>Contact Me</h1>
+    </div>
+
+    <div class="">
+      <button class="nav-button" onclick="openIndex()" id="Index">
+        Return to Home Page
+      </button>
+    </div>
+
+    <main>
+      <form method="get">
+        Name:<br />
+        <input type="text" name="Name" /><br /><br />
+        Email:<br />
+        <input type="text" name="Email" /><br /><br />
+        <p class="error is-error">Please enter a valid email address.</p>
+
+        <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
+          <fieldset>
+            <legend>Select your favorite class subject:</legend>
+            <input type="radio" name="subject" id="Programming" value="yes" />
+            Programming<br />
+            <input type="radio" name="subject" id="History" value="yes" />
+            History<br />
+            <input type="radio" name="subject" id="Math" value="yes" />
+            Math<br />
+            <input type="radio" name="subject" id="English" value="yes" />
+            English<br />
+            <input type="radio" name="subject" id="P.E." value="yes" />
+            P.E.<br />
+            <input type="radio" name="subject" id="Other" value="yes" />
+            Other<br />
+          </fieldset>
         </div>
-            <button class="nav-button" onclick="openIndex()" id="Index">Return to Home Page</button>
+        <br /><br />
 
-        <main>    
-            <form method="get">
-                Name:<br>
-                <input type="text" name="Name"><br><br>
-                Email:<br>
-                <input type="text" name="Email"><br><br>
+        <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
+          <fieldset>
+            <legend>Are you interested in any of these hobbies?</legend>
+            <input type="checkbox" name="hobby" id="Coding" value="yes" />
+            Coding<br />
+            <input
+              type="checkbox"
+              name="hobby"
+              id="Watching Sports"
+              value="yes"
+            />
+            Watching Sports<br />
+            <input type="checkbox" name="hobby" id="Video Games" value="yes" />
+            Video Games<br />
+            <input type="checkbox" name="hobby" id="Exercise" value="yes" />
+            Exercise<br />
+          </fieldset>
+        </div>
+        <br /><br />
 
-                <div class="border-solid border-blue-800 text-left top-2.5 bottom-2.5">
-                    <fieldset>
-                        <legend>Select your favorite class subject:</legend>
-                        <input type="radio" name="subject" id="Programming" value="yes">
-                        Programming<br>
-                        <input type="radio" name="subject" id="History" value="yes">
-                        History<br>
-                        <input type="radio" name="subject" id="Math" value="yes">
-                        Math<br>
-                        <input type="radio" name="subject" id="English" value="yes">
-                        English<br>
-                        <input type="radio" name="subject" id="P.E." value="yes">
-                        P.E.<br>
-                        <input type="radio" name="subject" id="Other" value="yes">
-                        Other<br>
-                    </fieldset>
-                </div><br><br>
+        <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
+          Where is your favorite place to be with friends?<br />
+          <select size="3" name="location" id="location">
+            <option value="Someone's house">Someone's house</option>
+            <option value="Shopping mall">Shopping mall</option>
+            <option value="Library">Library</option>
+            <option value="Gym">Gym</option>
+            <option value="Outdoors">Outdoors</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <br /><br />
 
-                <div class="border-solid border-blue-800 text-left top-2.5 bottom-2.5">
-                    <fieldset>
-                        <legend>Are you interested in any of these hobbies?</legend>
-                        <input type="checkbox" name="hobby" id="Coding" value="yes">
-                        Coding<br>
-                        <input type="checkbox" name="hobby" id="Watching Sports" value="yes">
-                        Watching Sports<br>
-                        <input type="checkbox" name="hobby" id="Video Games" value="yes">
-                        Video Games<br>
-                        <input type="checkbox" name="hobby" id="Exercise" value="yes">
-                        Exercise<br>
-                    </fieldset>
-                </div><br><br>
+        <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
+          <br />How is your day going?<br />
+          <textarea name="day" id="day" cols="40" rows="4"></textarea>
+        </div>
+        <br /><br />
 
-                <div class="border-solid border-blue-800 text-left top-2.5 bottom-2.5">
-                    Where is your favorite place to be with friends?<br>
-                    <select size="3" name="location" id="location">
-                        <option value="Someone's house">Someone's house</option>
-                        <option value="Shopping mall">Shopping mall</option>
-                        <option value="Library">Library</option>
-                        <option value="Gym">Gym</option>
-                        <option value="Outdoors">Outdoors</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div><br><br>
-
-                <div class="border-solid border-blue-800 text-left top-2.5 bottom-2.5">
-                    <br>How is your day going?<br>
-                    <textarea name="day" id="day" cols="40" rows="4"></textarea>
-                </div><br><br>
-
-                <div class="border-solid border-blue-800 text-left top-2.5 bottom-2.5">
-                    <input type="submit">&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;
-                    <input type="reset">
-                </div>
-            </form>
-        </main>
-    </body>
+        <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
+          <input
+            type="submit"
+          />&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;
+          <input type="reset" />
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
