@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+\*.local
+
+# Editor directories and files
+
+.idea
+.DS_Store
+_.suo
+_.ntvs\*
+_.njsproj
+_.sln
+\*.sw?
