@@ -1,4 +1,4 @@
-import { ERRORS } from "./src/utils";
+import { ERRORS, hideError, renderError } from "./src/utils";
 
 console.log(ERRORS);
 
