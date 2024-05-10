@@ -12,3 +12,7 @@ export const ERRORS = [
     msg: "Please enter a message between 10 and 100 characters.",
   },
 ];
+
+export const hideError = (el) => {
+  el.parentNode.querySelector(".error").classList.remove("is-error");
+};
