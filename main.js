@@ -1,3 +1,7 @@
+import { ERRORS } from "./src/utils";
+
+console.log(ERRORS);
+
 function openIndex() {
   window.location.href = "index.html";
 }
@@ -12,6 +16,8 @@ const submitBtn = document.querySelector("button[type='submit']");
 
 formEls.forEach((el) => {
   el.addEventListener("blur", (e) => {
-    console.log("blur event", e.target.id, e.target.value);
+    console.log(
+      ERRORS.find((error) => error.id === e.target.id).validate(e.target.value),
+    );
   });
 });
