@@ -6,10 +6,19 @@ export const ERRORS = [
       return val.length > 6 && val.includes(" ");
     },
   },
-  { id: "email", msg: "Please enter a valid email address." },
+  {
+    id: "email",
+    msg: "Please enter a valid email address.",
+    validate(val) {
+      return validator.isEmail(val);
+    },
+  },
   {
     id: "message",
     msg: "Please enter a message between 10 and 100 characters.",
+    validate(val) {
+      return val.length >= 10 && val.length <= 100;
+    },
   },
 ];
 
