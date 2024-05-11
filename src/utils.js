@@ -1,3 +1,5 @@
+import validator from "validator";
+
 export const ERRORS = [
   {
     id: "name",
@@ -10,6 +12,7 @@ export const ERRORS = [
     id: "email",
     msg: "Please enter a valid email address.",
     validate(val) {
+      console.log("check performed");
       return validator.isEmail(val);
     },
   },
