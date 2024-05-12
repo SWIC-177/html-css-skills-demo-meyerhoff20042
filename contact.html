@@ -17,7 +17,7 @@
     </div>
 
     <main>
-      <form method="get">
+      <form method="get" onsubmit="return submitForm()">
         Name:<br />
         <input type="text" name="Name" id="name" required />
         <p class="error">Please enter your full name.</p>
@@ -105,11 +105,53 @@
           <input
             type="submit"
             id="submitBtn"
-            onsubmit="submitForm()"
           />&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;
           <input type="reset" />
         </div>
       </form>
+
+      <script>
+        function submitForm() {
+          // Get form elements
+          const nameInput = document.getElementById("name").value;
+          const emailInput = document.getElementById("email").value;
+          const messageInput = document.getElementById("message").value;
+
+          // Validate each input element
+          if (!validateName(nameInput)) {
+            alert("Please enter your full name.");
+            console.log("name check");
+            return false;
+          }
+
+          if (!validateEmail(emailInput)) {
+            alert("Please enter a valid email address.");
+            console.log("email check");
+            return false;
+          }
+
+          if (!validateMessage(messageInput)) {
+            alert("Please enter a message between 10 and 100 characters.");
+            console.log("message check");
+            return false;
+          }
+
+          return true;
+        }
+
+        function validateName(input) {
+          return input.length > 6 && input.includes(" ");
+        }
+
+        function validateEmail(input) {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(input);
+        }
+
+        function validateMessage(input) {
+          return input.length >= 10 && input.length <= 100;
+        }
+      </script>
     </main>
   </body>
 </html>
