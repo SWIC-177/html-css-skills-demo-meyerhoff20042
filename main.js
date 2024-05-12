@@ -2,7 +2,7 @@ import { ERRORS, hideError, renderError } from "./src/utils";
 
 console.log(ERRORS);
 
-function openIndex() {
+export function openIndex() {
   window.location.href = "index.html";
 }
 
