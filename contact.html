@@ -19,19 +19,25 @@
     <main>
       <form method="get">
         Name:<br />
-        <input type="text" name="Name" id="name" />
+        <input type="text" name="Name" id="name" required />
         <p class="error">Please enter your full name.</p>
         <br /><br />
 
         Email:<br />
-        <input type="text" name="Email" id="email" />
+        <input type="text" name="Email" id="email" required />
         <p class="error">Please enter a valid email address.</p>
         <br /><br />
 
         <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
           <fieldset>
             <legend>Select your favorite class subject:</legend>
-            <input type="radio" name="subject" id="Programming" value="yes" />
+            <input
+              type="radio"
+              name="subject"
+              id="Programming"
+              value="yes"
+              required
+            />
             Programming<br />
             <input type="radio" name="subject" id="History" value="yes" />
             History<br />
@@ -69,7 +75,7 @@
 
         <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
           Where is your favorite place to be with friends?<br />
-          <select size="3" name="location" id="location">
+          <select size="3" name="location" id="location" required>
             <option value="Someone's house">Someone's house</option>
             <option value="Shopping mall">Shopping mall</option>
             <option value="Library">Library</option>
@@ -82,7 +88,13 @@
 
         <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
           <br />How is your day going?<br />
-          <textarea name="day" id="message" cols="40" rows="4"></textarea>
+          <textarea
+            name="day"
+            id="message"
+            cols="40"
+            rows="4"
+            required
+          ></textarea>
           <p class="error">
             Please enter a message between 10 and 100 characters.
           </p>
@@ -92,6 +104,8 @@
         <div class="bottom-2.5 top-2.5 border-solid border-blue-800 text-left">
           <input
             type="submit"
+            id="submitBtn"
+            onsubmit="submitForm()"
           />&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;
           <input type="reset" />
         </div>
